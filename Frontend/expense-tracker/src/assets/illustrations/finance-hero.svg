@@ -1,0 +1,25 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" rx="24" fill="#F8FAFC"/>
+  <g filter="url(#filter0_d)">
+    <rect x="60" y="80" width="280" height="160" rx="20" fill="white"/>
+  </g>
+  <rect x="80" y="110" width="120" height="20" rx="10" fill="#2563EB" opacity="0.7"/>
+  <rect x="80" y="150" width="200" height="20" rx="10" fill="#06B6D4" opacity="0.7"/>
+  <rect x="80" y="190" width="160" height="20" rx="10" fill="#94A3B8" opacity="0.5"/>
+
+  <circle cx="310" cy="270" r="60" fill="#2563EB" opacity="0.1"/>
+  <circle cx="310" cy="270" r="40" fill="#2563EB" opacity="0.2"/>
+  <circle cx="310" cy="270" r="20" fill="#2563EB"/>
+
+  <rect x="60" y="270" width="140" height="60" rx="16" fill="#FFFFFF" stroke="#2563EB" stroke-width="3"/>
+  <path d="M80 295 L120 295" stroke="#2563EB" stroke-width="4" stroke-linecap="round"/>
+  <path d="M80 310 L140 310" stroke="#2563EB" stroke-width="4" stroke-linecap="round"/>
+
+  <defs>
+    <filter id="filter0_d" x="40" y="60" width="320" height="200" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feOffset dy="4"/>
+      <feBlend in="SourceGraphic" in2="blur" result="mix"/>
+    </filter>
+  </defs>
+</svg>
