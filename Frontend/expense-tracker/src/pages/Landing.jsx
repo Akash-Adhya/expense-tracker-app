@@ -23,7 +23,8 @@ export default function LandingPage() {
             Track Your Expenses. <br /> Stay in Control.
           </h2>
           <p className="text-lg text-gray-600 mb-6">
-            A clean, modern platform to manage your income, expenses, and financial goals—all in one place.
+            A clean, modern platform to manage your income, expenses, and
+            financial goals—all in one place.
           </p>
 
           <Link

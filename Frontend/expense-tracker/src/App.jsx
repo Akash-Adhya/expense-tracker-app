@@ -1,9 +1,17 @@
 import React from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import LandingPage from "./pages/Landing";
-import Login from "./pages/Login";
-import Signup from "./pages/SignUp";
+import Login from "./pages/Auth/Login";
+import Signup from "./pages/Auth/SignUp";
 import NotFound from "./pages/NotFound";
+import Home from "./pages/Dashboard/Home";
+import Income from "./pages/Dashboard/Income";
+import Expense from "./pages/Dashboard/Expense";
 
 const App = () => {
   return (
@@ -12,6 +20,9 @@ const App = () => {
         <Route path="/" element={<LandingPage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/dashboard" element={<Home />} />
+        <Route path="/income" element={<Income />} />
+        <Route path="/expense" element={<Expense />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>
@@ -20,3 +31,15 @@ const App = () => {
 };
 
 export default App;
+
+
+
+const Root = () => {
+  const isAuthenticated = !!localStorage.getItem("token");
+
+  return isAuthenticated ? (
+    <Navigate to="/dashboard" />
+  ) : (
+    <Navigate to="/login" />
+  );
+};
