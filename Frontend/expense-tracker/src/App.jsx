@@ -5,9 +5,8 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
+
 import LandingPage from "./pages/Landing";
-import Login from "./pages/Auth/Login";
-import Signup from "./pages/Auth/SignUp";
 import NotFound from "./pages/NotFound";
 import Home from "./pages/Dashboard/Home";
 import Income from "./pages/Dashboard/Income";
@@ -32,8 +31,6 @@ const App = () => {
 };
 
 export default App;
-
-
 
 const Root = () => {
   const isAuthenticated = !!localStorage.getItem("token");

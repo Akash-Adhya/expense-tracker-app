@@ -36,7 +36,7 @@ export default function AuthWrapper() {
           <div className="inline-flex items-center justify-center w-20 h-20 bg-white rounded-full mb-4 shadow-2xl animate-pulse">
             <IndianRupee className="w-12 h-12 text-black" />
           </div>
-          <h1 className="text-4xl font-bold text-white mb-2">Expense Tracker</h1>
+          <h1 className="text-4xl font-bold text-white mb-2">Kharcha Tracker</h1>
           <p className="text-gray-400">Take control of your finances</p>
         </div>
 
