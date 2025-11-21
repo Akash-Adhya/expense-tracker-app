@@ -11,15 +11,16 @@ import NotFound from "./pages/NotFound";
 import Home from "./pages/Dashboard/Home";
 import Income from "./pages/Dashboard/Income";
 import Expense from "./pages/Dashboard/Expense";
-import AuthWrapper from "./pages/Auth/AuthWrapper";
+import Login from "./pages/Auth/Login";
+import Signup from "./pages/Auth/SignUp";
 
 const App = () => {
   return (
     <>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/login" element={<AuthWrapper />} />
-        <Route path="/signup" element={<AuthWrapper />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
         <Route path="/dashboard" element={<Home />} />
         <Route path="/income" element={<Income />} />
         <Route path="/expense" element={<Expense />} />
